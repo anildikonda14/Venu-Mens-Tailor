@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venu Men's Tailor - Nizamabad</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    /* ---------- HEADER ---------- */
+    header {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height: 380px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(135deg, rgba(37,117,252,0.8), rgba(106,17,203,0.8));
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      padding: 20px;
+    }
+    .header-content h1 {
+      margin: 0;
+      font-size: 3.2em;
+      font-weight: bold;
+      background: linear-gradient(to right, #ffcc70, #ff8177, #b721ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header-content p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+    .header-photos {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .header-photos img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    /* ---------- NAV ---------- */
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 22px;
+      display: block;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #444;
+    }
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #2575fc;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+    .festival-offer {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      padding: 30px;
+      border-radius: 12px;
+      margin: 20px auto;
+      width: 85%;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      font-size: 1.2em;
+      color: #222;
+    }
+    .owner-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+    /* ---------- FORM ---------- */
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background: #2575fc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    form button:hover {
+      background: #1a5ed8;
+    }
+    .map {
+      margin: 30px auto;
+      max-width: 600px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <h1>Venu Men's Tailor</h1>
+      <p>Premium Fabrics | Stylish Stitching | Festival Offers</p>
+      <div class="header-photos">
+        <img src="https://images.unsplash.com/photo-1525171254930-643fc658b64e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tailoring 1">
+        <img src="https://images.unsplash.com/photo-1588666309990-bd2f2717c2e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tailoring 2">
+        <img src="https://images.unsplash.com/photo-1604335399105-67f50e5d869a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fabric">
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#offers">Festival Offers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>Welcome to Venu Men's Tailor</h2>
+    <p>Providing premium fabrics, stylish ready-made wear, and expert stitching.  
+       We also offer exclusive discounts during festivals and special occasions.</p>
+    <div class="owner-box">
+      👔 <b>Owner:</b> Vennu Devanand <br>
+      📞 <b>Phone:</b> 9912134670
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>👕 New Dress Sales</h3>
+        <p>Trendy and traditional wear for men – casuals, formals, and festive collections.</p>
+      </div>
+      <div class="service-card">
+        <h3>🧵 Cloth Sales</h3>
+        <p>Wide variety of fabrics for all styles, ensuring top quality and comfort.</p>
+      </div>
+      <div class="service-card">
+        <h3>✂️ Tailoring & Stitching</h3>
+        <p>Perfect-fit custom tailoring to enhance your look and style.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section id="offers">
+    <h2>Festival Special Offers</h2>
+    <div class="festival-offer">
+      🎉 Ganesh Chaturthi & Diwali Sale Coming Soon!  
+      Get attractive discounts on fabrics and stitching packages.
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Address:</b> Tirumala X Road, Nizamabad - 503001</p>
+    <p><b>Phone:</b> <a href="tel:9912134670">9912134670</a></p>
+    <p><b>Email:</b> vennutailor@example.com</p>
+    
+    <form>
+      <h3>Send Us a Message</h3>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="map">
+      <h3>Find Us on Map</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2080190873667!2d78.101!3d18.672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bccf598f23bd!2sTirumala%20X%20Road%2C%20Nizamabad!5e0!3m2!1sen!2sin!4v1691234567890"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Venu Men's Tailor | Designed with ❤️ in Nizamabad</p>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/919912134670" class="whatsapp-btn" target="_blank">💬</a>
+
+</body>
+</html>
